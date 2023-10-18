@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    width:80%;
+    margin: auto;
+    margin-top: 30px;
+}
+nav{
+float: right;
+margin-right: 20px;
+cursor: pointer;
+text-transform: capitalize;
+}
+nav ul li{
+    display: inline-block;
+    transform: translateX(-250px);
+    margin-top: 10px;
+    padding: 10px 0;
+}
+nav ul li a{
+   text-decoration: none;
+   font-size: 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0 19px;
+   color: #7b5244;
+
+}
+/* /////////////////// */
+nav ul li a::before{
+  content:"";
+  position: absolute;
+  border-style: solid; 
+  left: 0;
+  top:0; 
+  transition:  0.2s;
+  border-width: 0 2px;
+    height: 100%; 
+    width: 95%;
+    transform: scale3d(1,0,1);
+
+}
+nav ul li a:hover::before{
+  transform: scale3d(1,1,1);
+ 
+ 
+ }
+
+
+nav ul li a::after{
+  content:"";
+  position: absolute;
+  border-style: solid; 
+  left: 0;
+  top:0; 
+  transition:  0.2s;
+  border-width: 2px 0;
+height: 91%; 
+width: 98%;
+transform: scale3d(0,1,1);
+transform-origin: left;
+ 
+ }
+ nav ul li a:hover::after{
+    
+  transform: scale3d(1,1,1);
+  transition-delay: .2s;
+   
+   
+   }
+
+/* /////////////////////////// */
+
+ header ul li {
+    display: inline-block;
+   
+}
+.icons{
+    position: absolute;
+    right: 40px;
+    top: 25px;
+}
+header ul li i{ 
+    padding: 0 5px;
+    font-size: 25px;
+    transition: .5s;
+   
+}
+header ul li i span{ 
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 10px;
+    background-color: #7b5244;
+
+   
+}
+header ul li i:hover{
+   transform: scale(1.2);
+   transform: rotate(10deg);
+   color: #7b5244;
+}
+
+.col1{
+    display: inline-block;
+    margin: 15px;
+   
+}
+.dropdown .col1 h3{
+  color: #7b5244;
+margin-bottom: 5px;
+font-size: 25px;
+   
+}
+.dropdown .col1 p{
+    color: #7b5244;
+ font-size: 20px;
+ cursor: pointer;
+     
+  }
+.dropdown{
+    border: 1px solid #7b5244;
+    width: 450px;
+    margin-top: 10px;
+    background-color: white;
+    position: absolute;
+    left: 200px;
+   visibility: hidden;
+    z-index: 2;
+    
+}
+ .drop:hover + .dropdown{
+  visibility: visible;
+  }
+
+
+
+
+  main{
+    position: relative;
+    margin: 50px auto;
+    width: 80%;
+    height: 70vh;
+    background-image: url(../img/main-banner-1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  main h2{
+    position: absolute;
+    font-size: 60px;
+    font-family: 'Londrina Outline', sans-serif;
+    color: #ffffff4a;
+    transform: rotate(30deg);
+    right: 270px;
+    top: 130px;
+  }
+  .Special{
+    position: relative;
+  }
+  .Special h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  .line{
+    position: absolute;
+    left: 47%;
+    width: 100px;
+    height: 1px;
+    background-color: #7b5244;
+    transition: .2s;
+  }
+  .Special h2:hover + .line{
+   transform: scale(1.5);
+  }
+  /* ////////////////// */
+  .cardcont{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+  }
+.cardcont .car1{
+    width: 300px;
+    margin: 20px;
+    
+}
+.cardcont .car1 img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.cardcont .car1 h4{
+  opacity: .5;
+  font-size: 20px;
+}
+.cardcont .car1 h2{
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .cardcont .car1 i{
+    font-size: 20px;
+    background-color: #a52a2a;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    visibility: hidden;
+    transition: .5s;
+    opacity: 0;
+  
+  }
+  .cardcont .car1:hover i{
+   visibility: visible;
+   opacity: 1;
+}
+/* //seaction 1 */
+.Penelope{
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+    width: 80%;
+    height: 300px;
+    position: relative;
+  
+
+}
+.coleft{
+    width: 45%;
+    height: 320px;
+    background-color: #f7f3ef;
+    margin-right: 20px;
+    margin-top: 40px ;
+    position: relative;
+}
+.coleft  i{
+    font-size: 60px;
+    margin-left: 10px;
+    color: #7b5244;
+    margin-bottom: -10px;
+    
+}
+.coleft h2 {
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 10px;
+   position: absolute;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   top: 10px;
+}
+.coleft .p1 {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+   position: absolute;
+   top:35px;
+
+}
+.coleft .p2 {
+    font-size: 20px;
+    position: absolute;
+    top:100px;
+    margin-left: 10px;
+    margin-right: 20px;
+    left: 0;
+}
+
+.li{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 2px;
+    background-color: #7b5244;
+}
+.lin1{
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    width: 50px;
+    height: 2px;
+    background-color: #7b5244;
+}
+.lie{
+    position: absolute;
+    bottom: 20px;
+    right: 170px;
+    width: 50px;
+    height: 2px;
+    background-color: #7b5244;
+}
+.corigh{
+    width: 55%;
+    height: 100%;
+    margin-top: 40px;
+}
+.corigh img{
+    width: 300px;
+    margin-right: 15px;
+    margin-top: -12px;
+    transition: .5s;
+   
+    
+}
+.corigh img:hover{
+   transform: scale(1.1);
+   
+    
+}
+
+/* /////section */
+.iconss{
+  display: flex;
+  width: 80%;
+  margin: 70px auto;
+}
+.iconssrv{
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #7b5244 ;
+}
+.sprit-ico{
+  background-image:  url(../img/service-icon.png);
+  background-position: center 5px;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+  height: 55px;
+
+}
+.iconssrv:hover .sprit-ico{
+  background-position: center -86px;
+}
+
+
+/* //icon1 */
+.sprit-ico2{
+  background-position: center -180px;
+  transition:  .5s;
+}
+.iconssrv:hover .sprit-ico2{
+  background-position: center -273px;
+}
+/* icon3 */
+.sprit-ico3{
+  background-position: center -366px;
+  transition:  .5s;
+}
+.iconssrv:hover .sprit-ico3{
+  background-position: center -455px;
+}
+/* icon4 */
+.sprit-ico4{
+  background-position: center -549px;
+  transition:  .5s;
+}
+.iconssrv:hover .sprit-ico4{
+  background-position: center -639px;
+}
+/* icon5 */
+.sprit-ico5{
+  background-position: center -734px;
+  transition:  .5s;
+}
+.iconssrv:hover .sprit-ico5{
+  background-position: center -826px;
+}
+.iconssrv1{
+  border: 0px ;
+}
+
+hr{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+/* //snd icon */
+.Featured{
+  position: relative;
+}
+.Featured h2{
+  text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.featcontent h2:hover + .line{
+  transform: scale(1.5);
+ }
+ .content2{
+  position: absolute;
+  left: 36%;
+  margin-top: 20px;
+ }
+.content2 span{
+  text-align: center;
+  margin-right: 25px;
+  font-size: 18px;
+}
+
+/* card */
+.featercard{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+.procard1{
+  position: relative;
+background-color: #fff;
+box-shadow: 10px 10px 35px -12px rgba(123,82,68,0.75);
+margin: 7px;
+}
+.fa1{
+  color: yellow;
+}
+.procard1 h3{
+  margin-top: 5px;
+}
+.procard1 h2{
+position: absolute;
+right: 20px;
+bottom: 50px;
+}
+.crat1{
+  color: #7b5244;
+  margin-left: 40%;
+  margin-top: 20px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.img2{
+  display: none;
+}
+.procard1:hover .img1{
+display: none;
+}
+.procard1:hover .img2{
+  display: block;
+  }
+  .soci{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 25px;
+    display: none;
+  }
+  .socil{
+    margin-right: 20px;
+    background-color: #7b5244;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .procard1:hover .soci{
+    display: block;
+  }
+  /* brand */
+  .brand{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .brand img{
+  opacity: .5;
+  }
+  .brand img:hover{
+    opacity: 1;
+    }
+    .brand1 h2{
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-transform: capitalize;
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+    .brand1 h2:hover + .line{
+      transform: scale(1.5);
+     }
+     /* footer */
+     .end{
+      background-color: #7b52442e;
+      border-radius: 5px 50px 5px 5px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+     }
+     .col6{
+      width: 25%;
+     }
+     .col4 a i{
+      font-size: 30px;
+      margin-bottom: 40px;
+     color: #000;
+     margin-right: 10px;
+   }
+   .col4 .face:hover{
+      color: rgb(93, 131, 255);
+   }
+   .col4 .ins:hover{
+      color: rgb(240, 21, 75);
+   }
+  
+   .col4 .git:hover{
+      color: rgb(143, 143, 149);
+   }
+  
+   .col4 .lin:hover{
+      color: rgb(11, 54, 194);
+   }
+   .col h3{
+margin-bottom: 10px;
+   }
+   .cola a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+   }
+   .cola a:hover{
+    color: #7b5244;
+   }
+   .col1 p{
+    margin-bottom: 10px;
+   }
+   .col1 h3{
+    margin-bottom: 10px;
+   }
+   .end .copy{
+   position: absolute;
+   bottom: 0;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: bold;
+  
+   }
+   .end .copy a{
+   color: #7b5244;
+   font-weight: bold;
+   text-decoration: none;
+   
+    }
+    .end .copy a:hover{
+      color: rgb(240, 21, 75);
+      
+       }
